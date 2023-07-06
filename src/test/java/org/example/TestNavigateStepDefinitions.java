@@ -13,11 +13,11 @@ public class TestNavigateStepDefinitions {
 
     private WebDriver driver;
     private PageFunctions functions;
-    private String projectPath = System.getProperty("user.dir");
+    private String chromePath = System.getProperty("user.dir") + "\\src\\test\\resources\\drivers\\chromedriver.exe";
 
     @Before
     public void setup(){
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\malusi.msomi\\Documents\\BitBucket\\untitled\\src\\test\\resources\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", chromePath);
         driver = new ChromeDriver();
     }
 
