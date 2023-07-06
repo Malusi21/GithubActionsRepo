@@ -7,13 +7,14 @@ import org.example.functions.PageFunctions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.io.File;
 import java.time.Duration;
 
 public class TestNavigateStepDefinitions {
 
     private WebDriver driver;
     private PageFunctions functions;
-    private String chromePath = System.getProperty("user.dir") + "\\src\\test\\resources\\drivers\\chromedriver.exe";
+    private String chromePath = System.getProperty("user.dir") + File.separator + "src"+ File.separator +"test"+ File.separator +"resources"+ File.separator +"drivers"+ File.separator +"chromedriver.exe";
 
     @Before
     public void setup(){
